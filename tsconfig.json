@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": "src/",
+    "target": "esnext",
+    "module": "ESNext",
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "paths": {
+      "@components/*": ["components/*"],
+      "@containers/*": ["containers/*"],
+      "@ui/*": ["components/ui/*"],
+      "@layouts/*": ["layouts/*"],
+      "@icons/*": ["../public/svg/*"],
+      "@styles/*": ["styles/*"],
+      "@helpers/*": ["helpers/*"]
+    },
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "isolatedModules": true
+  },
+  "include": ["**/*.ts", "**/*.tsx", "gatsby-ssr.js", "gatsby-browser.js", "gatsby-node.js", "gatsby-config.js"],
+  "exclude": ["node_modules", "build"]
+}
